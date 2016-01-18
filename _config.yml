@@ -11,8 +11,8 @@ paginate: 20
 baseurl: /
 domain_name: 'http://mustafaaloko.github.io'
 google_analytics: 'UA-XXXXXXXX-X'
-disqus: true
-disqus_shortname: 'your-disqus-shortname'
+disqus: false
+disqus_shortname: 'mustafaehsanaloko'
 
 # Details for the RSS feed generator
 url:            'http://mustafaaloko.github.io'
