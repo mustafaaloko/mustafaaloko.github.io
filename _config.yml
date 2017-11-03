@@ -11,7 +11,7 @@ plugins: [jekyll-paginate]
 paginate: 20
 domain_name: 'http://mustafaaloko.github.io'
 google_analytics: 'UA-109132974-1'
-disqus: false
+disqus: true
 disqus_shortname: 'mustafaehsanaloko'
 
 # Details for the RSS feed generator
