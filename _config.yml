@@ -10,7 +10,7 @@ highlighter: pygments
 paginate: 20
 baseurl: /
 domain_name: 'http://mustafaaloko.github.io'
-google_analytics: 'UA-XXXXXXXX-X'
+google_analytics: 'UA-109132974-1'
 disqus: false
 disqus_shortname: 'mustafaehsanaloko'
 
