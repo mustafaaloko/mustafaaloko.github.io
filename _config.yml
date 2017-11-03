@@ -12,7 +12,7 @@ paginate: 20
 domain_name: 'http://mustafaaloko.github.io'
 google_analytics: 'UA-109132974-1'
 disqus: true
-disqus_shortname: 'mustafaehsanaloko'
+disqus_shortname: 'mustafaaloko'
 
 # Details for the RSS feed generator
 url:            'http://mustafaaloko.github.io'
