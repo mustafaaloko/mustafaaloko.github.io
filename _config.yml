@@ -4,11 +4,11 @@ meta_description: "Here I share my programming knowledge and skills with world."
 
 aboutPage: true
 
-markdown: redcarpet
-highlighter: pygments
+markdown: kramdown
+highlighter: rouge
 
+plugins: [jekyll-paginate]
 paginate: 20
-baseurl: /
 domain_name: 'http://mustafaaloko.github.io'
 google_analytics: 'UA-109132974-1'
 disqus: false
