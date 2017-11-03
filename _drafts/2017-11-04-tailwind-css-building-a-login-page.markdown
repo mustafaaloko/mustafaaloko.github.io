@@ -6,7 +6,15 @@ date: 02-Nov-2017
 
 Finally, after months of waiting [Tailwind CSS][tailwind-website] is released. I believe that it will be a big deal in near future.
 
-In this post we will create a beautiful login page using Tailwind. I will try to keep things as simple possible. We won't touch using Tailwind with PostCSS, Webpack, Laravel Mix or others, instead we will only concentrate on Tailwind itself.
+In this post we will create a beautiful login page using Tailwind. I will try to keep things as simple as possible. We won't touch using Tailwind with PostCSS, Webpack, Laravel Mix or others, instead we will only concentrate on Tailwind itself.
+
+Below is our completed designed page, which we will build with Tailwind in this post.
+
+<div>
+    <a href="/assets/images/tailwind/complete.png" class="image">
+        <img src="/assets/images/tailwind/complete.png" alt="">
+    </a>
+</div>
 
 <hr>
 
@@ -91,7 +99,7 @@ File: **style.css**
  */
 {% endhighlight %}
 
-Final step will be to compile <span>`style.css`</span> with Tailwind's build engine to use it in our regular HTML. Below command will create a `dist.css`.
+Final step will be to compile <span>`style.css`</span> with Tailwind's build engine to use it in our regular HTML. Below command will create a <span>`dist.css`</span>.
 
  {% highlight shell %}
 $ ./node_modules/.bin/tailwind build style.css -o dist.css
