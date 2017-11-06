@@ -43,7 +43,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 .icon-facebook-rect:before { content: '\e803'; }
 
 /* Spacing */
-.post h1, h3, h4, h5, p, .post-body ul, #post-list li, pre {
+p, .post-body ul, #post-list li, pre {
 margin-bottom: 20px;
 }
 
@@ -182,7 +182,7 @@ a,
 	transition: all 0.15s ease;
 }
 
-ul 	{ margin:0; padding:0; }
+ul 	{ margin:0; padding:0; margin-left: 20px; }
 li	{ list-style-type:circle; list-style-position:inside; }
 
 /* Line Height */
@@ -261,7 +261,7 @@ em, i { font-style: italic; }
 h3, h4, h5 { color:#333; }
 
 h3 { font-size:20px; font-weight: 400; }
-h4 { font-size:16px; font-weight:bold; }
+h4 { font-size:16px; font-weight:bold; margin-top: 20px; margin-bottom: 5px; }
 h5 { font-size:15px; font-weight: bold; }
 
 h6 {
@@ -279,8 +279,16 @@ p.small {
 }
 
 blockquote {
-	padding-left: 15px;
-	border-left: 3px solid #eee;
+		border-left: 5px solid #7d7c7c;
+		font-size: 14px;
+		background: #eee;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		padding: 15px 15px;
+}
+
+blockquote p {
+	margin: 0;
 }
 
 hr {
@@ -363,8 +371,10 @@ thead th,th {
 
 img {
 	width: 100%;
-	max-width: 100%;
-	border-radius: 3px;
+    max-width: 100%;
+    border: 1px solid lightgray;
+    padding: 5px;
+    border-radius: 3px;
 }
 
 /* Made with Cactus Badge */
