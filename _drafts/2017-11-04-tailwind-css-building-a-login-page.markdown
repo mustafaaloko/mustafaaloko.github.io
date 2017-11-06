@@ -201,7 +201,56 @@ Tailwind provides utilities to use Flexbox easily. As per our final design, we h
 
 - **Container:** This utility (<span>`container`</span>) works same as Bootstrap's container, setting up max-width of the page. The only difference is that Tailwind doesn't add margin's automatically to left and right of the element to center it on the page. Therefore, we need to add <span>`mx-auto`</span> to center the element.
 - **Height 100%:** We use <span>`h-full`</span> to stretch the height of element same of its parent height. It is same as <span>`height: 100%`</span>. Refer to official docs of [height](https://tailwindcss.com/docs/height) and [width](https://tailwindcss.com/docs/width) for more details.
-- ****
+- **Flexbox:** I must admit that Tailwind makes it enjoyable to use Flexbox. In our case, we have used <span>`flex`</span> to specify that we will be using flex display and we have added <span>`justify-center`</span> and <span>`items-center`</span> to horizontally and vertically center the child elements inside our div.
+- **Elements Widths:** We can use <span>`w-{size}`</span> syntax to specify the width of our element. In this case we are using <span>`w-1/3`</span> to set the width of our element to one third of its parent element. It's equivalent to set an element class to <span>`col-md-4 col-md-offset-4`</span> in Bootstrap.
+- **Text Styling and Positioning:** There are several ways to style text in Tailwind. In above, <span>`font-hairline`</span> sets the CSS <span>`font-weight`</span> property to <span>`100`</span> and <span>`text-center`</span> is equivalent to CSS's <span>`text-align: center`</span>.
+- **Margins and Paddings:**: This is one of my favorite parts. You no longer need to shift between your HTML and CSS files to set different margin and padding sizes for your elements. In Tailwind, you can easily use <span>`p{side?}-{size}`</span> and <span>`m{side?}-{size}`</span> to add margins and paddings. We have used <span>`mb-6`</span> which sets to bottom margin of our header to **1.5rem**. Below is a list of possible values we can replace with **size** placeholder in above example.
+
+{% highlight javascript %}
+...
+  margin: {
+    'px': '1px',
+    '0': '0',
+    '1': '0.25rem',
+    '2': '0.5rem',
+    '3': '0.75rem',
+    '4': '1rem',
+    '6': '1.5rem',
+    '8': '2rem',
+  },
+...
+{% endhighlight %}
+
+Please note that as mentioned before, you can change or add values to all options which exist in <span>`tailwind.js`</span> file.
+
+Following is the screenshot of how our page looks like with all the code we have written so far.
+
+<div>
+    <a href="/assets/images/tailwind/step2.png" class="image">
+        <img src="/assets/images/tailwind/step2.png" alt="">
+    </a>
+</div>
+
+Positioning looks good, now we need to concentrate on our labels, form fields and buttons styling.
+
+#### Form Elements Styling and CSS Pseudo-classes
+In this section, I won't go through all form fields and other remaining elements. We will only cover new utilities. For the remaining elements, you have to figure it out on your own using the existing knowledge you have gained.
+
+{% highlight html %}
+...
+<div class="border-teal p-8 border-t-12 bg-white mb-6 rounded-lg shadow-lg">
+    <div class="mb-4">
+        <label class="font-bold text-grey-darker block mb-2 color-grey-dark">Username or Email</label>
+        <input type="text" class="block appearance-none w-full bg-white border border-grey-light hover:border-grey px-2 py-2 rounded shadow" placeholder="Your Username">
+    </div>
+    ...
+</div>
+...
+{% endhighlight %}
+
+- **Login Box:**: We have given our login box a white background along with shadows so it can stand out on our grey colored background page. We have also added a **1.5rem** bottom margin and a padding of **2rem** to all four sides.
+- **Borders:**: You can use <span>`border{-side?}{-width?}`</span> and <span>`border-{color}`</span> for specifying a border's width, color and side.
+- **Shadows and Border Radius:**: 
 
 
 [tailwind-website]: https://tailwindcss.com
