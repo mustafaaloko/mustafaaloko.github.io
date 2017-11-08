@@ -7,7 +7,9 @@ aboutPage: true
 markdown: kramdown
 highlighter: rouge
 
-plugins: [jekyll-paginate]
+plugins:
+    - jekyll-paginate
+    - jekyll-seo-tag
 paginate: 20
 domain_name: 'http://mustafaaloko.github.io'
 google_analytics: 'UA-109132974-1'
