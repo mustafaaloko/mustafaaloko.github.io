@@ -1,5 +1,6 @@
-name: Mustafa Ehsan
+name: Mustafa Ehsan Alokozay
 description: Web Developer from Afghanistan
+alt_title: Autonomy Engineer at <a target="_blank" href="https://aidrivers.ai">AIDRIVERS</a>
 meta_description: "Here I share my programming knowledge and skills with world."
 
 aboutPage: true
@@ -18,7 +19,7 @@ disqus_shortname: 'mustafaaloko'
 
 # Details for the RSS feed generator
 url:            'http://mustafaaloko.github.io'
-author:         'Mustafa Ehsan'
+author:         'Mustafa Ehsan Alokozay'
 authorTwitter:  'mustafaaloko'
 
 permalink:       /:year/:title/
